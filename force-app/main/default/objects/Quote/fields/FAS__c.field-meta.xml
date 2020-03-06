@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FAS__c</fullName>
+    <description>This field contains the one shot fees that the client pays</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field contains the one shot fees that the client pays</inlineHelpText>
+    <label>FAS</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBITDA_margin__c</fullName>
+    <description>EBITDA margin</description>
+    <externalId>false</externalId>
+    <inlineHelpText>EBITDA margin</inlineHelpText>
+    <label>EBITDA margin</label>
+    <precision>17</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Percent</type>
+</CustomField>

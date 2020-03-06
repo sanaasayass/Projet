@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Cancel_Quote</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+OR(
+ISPICKVAL(PRIORVALUE( Status ), &quot;BC signé&quot;),
+ISPICKVAL(PRIORVALUE( Status ), &quot;Rejeté client&quot;),
+ISPICKVAL(PRIORVALUE( Status ), &quot;Validé en interne&quot;)), 
+ISPICKVAL( Status, &#39;Annulé&#39;))</errorConditionFormula>
+    <errorMessage>Vous ne pouvez pas annuler ce devis</errorMessage>
+</ValidationRule>

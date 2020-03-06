@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interco_Out__c</fullName>
+    <description>This field contains the value that INWI gets for outgoing calls</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field contains the value that INWI gets for outgoing calls</inlineHelpText>
+    <label>Interco Out</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <type>Currency</type>
+</CustomField>

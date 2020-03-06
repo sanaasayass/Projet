@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DataComplex_Status_Prise_en_compte</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( Status , &#39;Prise en compte&#39;),RecordType.DeveloperName = &#39;Data_Complex&#39;, Assign__c  = &#39;OSM Technique&#39;,
+
+OR($Profile.Name  &lt;&gt; &#39;OSM Technique Profile&#39;,AND(Etude_technique_termin_e__c = false,$Profile.Name  =  &#39;OSM Technique Profile&#39;)))</errorConditionFormula>
+    <errorMessage>Le changement du Status de devis vers &quot;Prise en compte&quot; n&#39;est possible que pour le Team &quot;OSM&quot;</errorMessage>
+</ValidationRule>

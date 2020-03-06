@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Lock_Passage_En_cours</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED(Status), 
+ISPICKVAL(PRIORVALUE(Status), &quot;En cours&quot;),
+NOT(OR(
+AND(ISPICKVAL(Status, &quot;En attente d&#39;approbation&quot;),ApprovalSubmited__c = NULL),
+ISPICKVAL(Status, &quot;Annulé&quot;),
+AND(ISPICKVAL(Status, &quot;Approbation acceptée&quot;), 
+Niveau_de_validation__c &lt;&gt; NULL,Remise_Moyenne__c=0)
+)
+)
+)</errorConditionFormula>
+    <errorMessage>Impossible de changer le status du Devis</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Lock_PassageTo_Envoye_Client</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+Niveau_de_validation__c  &lt;&gt; Null,
+Approbation_accepte__c = false, 
+ISPICKVAL( Status, &#39;Envoyé au client&#39;) 
+)</errorConditionFormula>
+    <errorMessage>La demande d&#39;une approbation est nécessaire pour ce devis.</errorMessage>
+</ValidationRule>

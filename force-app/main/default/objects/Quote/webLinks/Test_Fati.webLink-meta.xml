@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_Fati</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Test Fati</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/23.0/connection.js&quot;)} 
+
+try {
+var url = parent.location.href; 
+var updateRecords = []; 
+var update_Quote = new sforce.SObject(&quot;Quote&quot;); 
+update_Quote.id = &quot;{!Order.Id}&quot;; 
+update_Quote.Affecter__c = True;
+updateRecords.push(update_Quote); 
+
+result = sforce.connection.update(updateRecords); 
+parent.location.href = url; 
+} catch (e) {
+alert (e);</url>
+</WebLink>

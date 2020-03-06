@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsPopup_AssigneStatus__c</fullName>
+    <defaultValue>&#39;True&#39;</defaultValue>
+    <externalId>false</externalId>
+    <label>IsPopup_AssigneStatus</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>True</fullName>
+                <default>true</default>
+                <label>True</label>
+            </value>
+            <value>
+                <fullName>False</fullName>
+                <default>false</default>
+                <label>False</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Etude</fullName>
+                <default>false</default>
+                <label>Etude</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

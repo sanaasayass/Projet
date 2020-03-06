@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Revenue__c</fullName>
+    <description>This field contains what INWI gets from the client during the whole priod of the contract</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field contains what INWI gets from the client during the whole priod of the contract</inlineHelpText>
+    <label>Revenue</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

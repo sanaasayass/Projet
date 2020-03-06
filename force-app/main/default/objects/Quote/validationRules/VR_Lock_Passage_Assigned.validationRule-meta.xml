@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Lock_Passage_Assigned</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED(Status), 
+ISPICKVAL(PRIORVALUE(Status), &quot;Assigné&quot;),
+NOT(OR(
+AND(ISPICKVAL(Status, &quot;Prise en compte&quot;), 
+Assign__c=&quot;Avant Vente&quot; ),
+AND(ISPICKVAL(Status, &quot;Prise en compte&quot;), 
+Assign__c!=&quot;Avant Vente&quot; ,OR(raccordement_study_completed__c =true, Technical_study_completed__c=true)) 
+)
+)
+				
+)</errorConditionFormula>
+    <errorMessage>Impossible de changer le status du Devis</errorMessage>
+</ValidationRule>

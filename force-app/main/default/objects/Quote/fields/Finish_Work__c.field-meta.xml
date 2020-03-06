@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Finish_Work__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>It will update by OSM Team and It Visible only to OSM Team.</description>
+    <externalId>false</externalId>
+    <label>Technical Study Completed</label>
+    <type>Checkbox</type>
+</CustomField>

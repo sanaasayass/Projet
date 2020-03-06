@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remise_Moyenne__c</fullName>
+    <description>This field contains the average discount</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field contains the average discount</inlineHelpText>
+    <label>Remise Moyenne</label>
+    <precision>17</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Percent</type>
+</CustomField>

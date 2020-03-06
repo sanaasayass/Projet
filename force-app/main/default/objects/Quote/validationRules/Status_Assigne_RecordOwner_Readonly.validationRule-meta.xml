@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Assigne_RecordOwner_Readonly</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( Status , &#39;Assigné&#39;),( $User.Id  =  OwnerId ),(  Assign__c  &lt;&gt; null ),  OR ((RecordType.DeveloperName = &#39;Mobile_Complex&#39;) , (RecordType.DeveloperName = &#39;Multiproduct&#39;) , (RecordType.DeveloperName = &#39;Data_Complex&#39;),(RecordType.DeveloperName = &#39;ICT_Cloud_Datacenter_Complex&#39;),
+(RecordType.DeveloperName  = &#39;ICT_Cybersecurity_Complex&#39;)),NOT(($Profile.Name = &#39;System Administrator&#39;)),( AssignedTime__c &gt; 4),( NOW()  &gt;  AssigneTime__c ))</errorConditionFormula>
+    <errorMessage>Si le commercial changes le status du devis vers &quot;Assigné&quot;, le devis n&#39;est plus modifiable par le commercial</errorMessage>
+</ValidationRule>

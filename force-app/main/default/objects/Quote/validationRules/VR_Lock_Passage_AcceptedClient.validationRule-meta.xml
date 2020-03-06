@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Lock_Passage_AcceptedClient</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED(Status), 
+ISPICKVAL(PRIORVALUE(Status), &quot;Accepté client&quot;),
+NOT(OR(ISPICKVAL(Status, &quot;BC signé&quot;),
+ISPICKVAL(Status, &quot;Annulé&quot;)
+)
+)
+)</errorConditionFormula>
+    <errorMessage>Impossible de changer le status du Devis</errorMessage>
+</ValidationRule>

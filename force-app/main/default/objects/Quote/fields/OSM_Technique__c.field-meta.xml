@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSM_Technique__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field will decide the flow is ICT Simple or ICT Complex.</description>
+    <externalId>false</externalId>
+    <label>OSM Technique</label>
+    <type>Checkbox</type>
+</CustomField>
